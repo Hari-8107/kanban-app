@@ -1,16 +1,53 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Kanban Task Management App
 
-Currently, two official plugins are available:
+This is a simple Kanban board project built using React and Tailwind CSS.  
+The app allows users to add tasks, move them between columns, and delete them.
+The project was built within a limited time frame and focuses on clean UI and optimistic updates.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Live Demo
 
-## React Compiler
+https://kanban-app-drab-five.vercel.app/board
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## How to Run the Project Locally
 
-## Expanding the ESLint configuration
+1. Clone the repository:
+   https://github.com/Hari-8107/kanban-app.git
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+2. Go inside the project folder:
+   cd kanban-app
+
+3. Install dependencies:
+   npm install
+
+4. Start the development server:
+   npm run dev
+
+Then open the local server link shown in the terminal.
+
+## Optimistic UI Explanation
+
+When a task is moved from one column to another:
+
+- The UI updates immediately without waiting for the API.
+- A simulated API call is made in the background.
+- If the API call succeeds, nothing changes.
+- If it fails, the task is moved back to its previous state.
+
+This approach improves user experience by making the app feel faster.
+
+## Trade-offs & Decisions
+
+- Used a fake API call instead of a real backend to simulate real-world behavior.
+- Managed state using React's useState for simplicity.
+- Did not add database persistence to keep the focus on UI logic.
+- Styling was done using Tailwind CSS for faster development.
+
+## Tech Stack
+- React
+- Vite
+- Tailwind CSS
+- React Router
+- React Hot Toast
+
