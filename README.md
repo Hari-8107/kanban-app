@@ -5,8 +5,7 @@ The app allows users to add tasks, move them between columns, and delete them.
 The project was built within a limited time frame and focuses on clean UI and optimistic updates.
 
 ## Live Demo
-
-kanban-app-drab-five.vercel.app
+https://kanban-app-drab-five.vercel.app
 
 ## How to Run the Project Locally
 
