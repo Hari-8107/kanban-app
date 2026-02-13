@@ -1,5 +1,3 @@
-# React + Vite
-
 # Kanban Task Management App
 
 This is a simple Kanban board project built using React and Tailwind CSS.  
@@ -8,7 +6,7 @@ The project was built within a limited time frame and focuses on clean UI and op
 
 ## Live Demo
 
-https://kanban-app-drab-five.vercel.app/board
+kanban-app-drab-five.vercel.app
 
 ## How to Run the Project Locally
 
